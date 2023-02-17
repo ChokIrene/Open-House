@@ -1,0 +1,876 @@
+/*------------------------Homepage----------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(239, 239, 239);
+    position: relative;
+}
+header{
+    position:absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: white;
+}
+header .logo{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 25px;
+}
+header ul li a:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: center;
+}
+section img .log{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.EVENT{
+    width: 60%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0%;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.event{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+}
+.app{
+    flex-basis: 31%;
+    background: lightskyblue;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.EVENT h1{
+    font-size: 50px;
+}
+.EVENT p{
+    font-size: 20px;
+}
+.app:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.app p{
+    font-size: 25px;
+}
+button.APP{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow:inset 0 0 0 0 white;
+    border: none;
+    transition: ease-out 0.3s;
+    outline: none;
+}
+button.APP:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+    box-shadow: inset 150px 0 0 0 white;
+}
+.course{
+    width: auto;
+    margin: auto;
+    height:fit-content;
+    text-align: center;
+    background-color: rgba(98, 142, 207, 0.616);
+    padding-bottom: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.course h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.course p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.button{
+    padding: 0px;
+    margin: 0;
+    width: 250px;
+    height: 80px;
+    top: 300px;
+    left: 400px;
+    position:relative;
+    border-radius: 5px;
+    transition-duration: 60s;
+
+}
+.course-row{
+    padding-top: 80px;
+    position: center;
+}
+
+button.Business{
+    padding: 225px 160px;
+    background-image: url(courses/Business.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+button.Business:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.Design{
+    padding: 225px 160px;
+    background-image: url(courses/Design.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.Design:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.Engineering{
+    padding: 225px 160px;
+    background-image: url(courses/Engineering.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.Engineering:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.Media{
+    padding: 225px 160px;
+    background-image: url(courses/media.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.Media:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.HealthSci{
+    padding: 225px 160px;
+    background-image: url(courses/HealthScience.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.HealthSci:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.Human{
+    padding: 225px 160px;
+    background-image: url(courses/HumanNSocialSci.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.Human:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.ICT{
+    padding: 225px 160px;
+    background-image: url(courses/ICT.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.ICT:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.SciNChem{
+    padding: 225px 160px;
+    background-image: url(courses/SciNChemTec.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.SciNChem:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+
+button.INTER{
+    padding: 225px 160px;
+    background-image: url(courses/Interdisciplinary.png);
+    border-radius: 20px;
+    color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+button.INTER:hover{
+    box-shadow: 0 0 60px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+.TOUR{
+    background-color: white;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+.Tour-PIC{
+    background-image: url(courses/Tour.png);
+    width: auto;
+    height: fit-content;
+    padding-bottom: 500px;
+    padding-right: 20px;
+    padding-left: 20px;
+    filter: blur(5px);
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+
+}
+.Tour-txt{
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/opacity/see-through */
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.Tour-txt h1{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+.Tour-txt p{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+button.VR{
+    padding: 20px 40px;
+    font-size: 20px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+button.VR:hover{
+    background-color: rgb(0, 0, 0);
+    border-color: #000000;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.658);
+    transition: 0.5s;
+    transform: scale(.95);
+}
+/*.TALK_PIC{
+    padding: 200px 293px;
+    color: rgba(255, 255, 255, 0);
+    background-image: url(courses/Talk.png);
+    border-color: rgba(255, 255, 255, 0);
+    margin-left: 1300px;
+}*/
+.schedule{
+    background-color: rgba(173, 173, 173, 0.66);
+    height:fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+.TALK {
+    text-align: center;
+}
+.TALK h1{
+    font-size: 60px;
+}
+.TALK p{
+    font-size: 20px;
+}
+.Time{
+    padding-top: 50px;
+}
+.Time h1{
+    padding-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+.timing p{
+    font-size: 17px;
+    text-align: center;
+    color: rgb(223, 0, 0);
+}
+
+.map{
+    text-align: center;
+}
+.map h1{
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.trans{
+    margin-top: 90px;
+}
+
+.google{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.car{
+    width: 50%;
+    text-align: center;
+    float: right;
+    padding-right: 500px;
+}
+.car h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.car p{
+    font-size: 20px;
+}
+.public{
+    width:50%;
+    text-align: center;
+    float: left;
+    padding-left: 500px;
+}
+.public p{
+    font-size: 20px;
+}
+.public h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.number{
+    background-color: black;
+    height: fit-content;
+    text-align: center;
+}
+button.email{
+    width: 300px;
+    height: 50px;
+    border: none; 
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.3s;
+    outline: none;
+    font-size: 25px;
+    
+}
+button.email:hover{
+    box-shadow: inset 300px 0 0 0 white;
+    color: black;
+}
+/*--------------------SIGN UP---------------------*/
+.box{
+    background-color: rgb(218, 241, 255);
+    height: 600px;
+    width:450px;
+    padding:0;
+    margin-right:0;
+    margin-left:500px;
+    margin-bottom:330px
+
+
+}
+   
+#sign_up_now{
+    padding:0;
+    margin-bottom: 0px;
+    margin-top:0px;
+    margin-left:130px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    font-size: 28px;
+
+}
+
+
+
+#sign_up_now_details{
+    padding:0;
+    margin-bottom: 0px;
+    margin-top:20px;
+    margin-left:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:light;
+    font-size: 15px;
+    color:#777
+
+}
+
+#form{
+    padding:0;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+
+#fname{
+    margin-top:7px;
+    margin-bottom: 7px;
+    padding-left:10px;
+    padding-right:55px;
+}
+
+#lname{
+    margin-top:7px;
+    margin-bottom: 7px;
+    padding-left:10px;
+    padding-right:55px;
+}
+
+#email{
+    margin-top:7px;
+    margin-bottom: 7px;
+    padding-left:10px;
+    padding-right:130px
+}
+
+#phone{
+    margin-top:7px;
+    margin-bottom: 7px;
+    padding-left:10px;
+    padding-right:11px
+}
+
+.submit.button {
+    background-color: #555555;
+    color: white;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:50px;
+    padding-right:50px;
+    margin-left:20px;
+    margin-top: 30px;
+}
+
+.submit.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:50px;
+    padding-right:50px;
+    margin-left:70px;
+    margin-top: 10px;
+}
+/*--------------------cfmpage---------------------*/
+/*lottie*/
+*,html{font-family: Arial, Helvetica, sans-serif;}
+.bg-blue{background:  rgb(218, 241, 255);}
+.animation-center{  display: flex;
+ justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  /*height: 100vh;/ /if we only want this item to be smack center*/
+}
+.loading-text{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    top: -50px;
+    position: relative;
+    font-style: italic;
+}
+/*--------------------WHYNP---------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(239, 239, 239);
+    position: relative;
+}
+.NPNavBar{
+    position:absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    padding: 23px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: white;
+}
+.NPhp{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.WhyNPContent{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+
+}
+.WhyNP-img{
+    text-align: center;
+    background-image: url(courses/whyNPbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*-width: 200px;-*/
+    height: 130vh;
+    grid-area: overlap;
+}
+.whyNP-con{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.836);
+    margin: 100px;
+    grid-area: overlap;
+    height: fit-content;
+}
+/*----------------------------------------------APP---------------------------------------------*/
+#Intro_app{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    padding-top:0;
+    text-align: center;
+    padding-bottom:0;
+    font-weight: bolder;
+}
+
+.body{
+    padding:0;
+    background-color: rgb(218, 241, 255);
+}
+
+#app_icon{
+    padding:0;
+    height: 370px;
+    width: 370px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top:0px;
+}
+
+#app_heading{
+    padding:0;
+    margin-bottom: 70px;
+    margin-top: 0px;
+}
+
+
+
+.appimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        height:500px
+      }
+
+
+h1{
+    padding:0;
+    margin-bottom: 0px;
+    margin-top:0px;
+    margin-left:0px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:light;
+    font-size: 30px;
+
+}
+
+
+h2{
+    padding:0;
+    padding-bottom:0px;
+    padding-top:30px;
+    padding-left:50px;
+    margin-top:0;
+    font-size:20px ;
+
+}
+
+.download_button {
+    background-color: #555555;
+    color: white;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:50px;
+    padding-right:50px;
+    margin-left:70px;
+    margin-top: 10px;
+}
+
+.download_button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:50px;
+    padding-right:50px;
+    margin-left:70px;
+    margin-top: 10px;
+  }
+
+#homepg{
+    margin-left: 30px;
+    padding-top: 0;
+    padding-left:0;
+    height:650px;
+    width:270px;
+}
+
+#leaderboard{
+    margin-left: 30px;
+    padding: 0;
+    height:650px;
+    width:270px;
+    
+
+}
+
+#qrcode{
+    margin-left: 30px;
+    padding: 0;
+    height:650px;
+    width:270px;
+    
+}
+
+#question{
+    margin-left: 30px;
+    padding: 0;
+    height:650px;
+    width:270px;
+    
+}
+
+#mapz{
+    margin-left: 30px;
+    padding: 0;
+    height:650px;
+    width:270px;
+    
+}
+
+#reward{
+    margin-left: 30px;
+    padding: 0;
+    height:650px;
+    width:270px;
+    
+}
+.roWS {
+    display: flex;
+
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+
+
+  div.row {
+    background-color: rgb(218, 241, 255);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.row a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.row a:hover {
+    background-color: #777;
+  }
+
+h3{
+    padding:0;
+    margin-bottom: 0px;
+    margin-top:0px;
+    margin-left:0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:light;
+    font-size: 40px;
+
+}
+
+
+
+h4{
+    padding:0;
+    margin-bottom: 0px;
+    margin-top:40px;
+    margin-left:0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:light;
+    font-size: 24px;
+
+}
+
+.model{
+    padding:0;
+}
+
+.sketchfab-embed-wrapper{
+   padding-left:100px;
+}
+
+h5{
+    padding:0;
+    margin-bottom: 0px;
+    margin-top:40px;
+    margin-left:110px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:light;
+    font-size: 24px;
+
+}
+
+
+.model_intro{
+    padding-top: 20px;
+}
